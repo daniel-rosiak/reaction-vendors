@@ -1,0 +1,10 @@
+"The vendor is a type of product vendor"
+type Vendor {
+  "Vendor name"
+  name: String!
+}
+
+extend type Query {
+  "Return all vendors"
+  getVendors: [Vendor!]!
+}
